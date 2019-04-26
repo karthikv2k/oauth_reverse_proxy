@@ -1,0 +1,14 @@
+vouch:
+  allowAllUsers: true
+  headers:
+    idtoken: X-Vouch-IdP-IdToken
+
+oauth:
+  provider: google
+  # get credentials from...
+  # https://console.developers.google.com/apis/credentials
+  client_id: CLIENT_ID
+  client_secret: CLIENT_SECRET
+  callback_urls:
+    - SERVICE_URL/auth
+  # endpoints set from https://godoc.org/golang.org/x/oauth2/google
